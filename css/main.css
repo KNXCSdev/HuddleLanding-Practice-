@@ -1,0 +1,152 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  line-height: 1;
+  font-size: 1.8rem;
+}
+
+.container {
+  max-width: 170rem;
+  margin: 0 auto;
+}
+
+.primary-heading {
+  font-size: 4rem;
+  line-height: 1.3;
+  margin-bottom: 2.4rem;
+}
+
+.secondary-heading {
+  font-size: 3rem;
+  line-height: 1.3;
+  margin-bottom: 2.4rem;
+  color: black;
+}
+
+.description {
+  margin-bottom: 2.4rem;
+  line-height: 1.4;
+  width: 80%;
+}
+
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --palecyan: hsl(193, 100%, 96%);
+  --darkcyan: hsl(192, 100%, 9%);
+  --grayblue: hsl(208, 11%, 55%);
+  --white: #ffffff;
+}
+
+.hero {
+  background-image: url("/images/bg-hero-desktop.svg");
+  background-color: var(--palecyan);
+  background-size: cover;
+  padding-bottom: 4rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+}
+.nav-btn {
+  padding: 1.2rem 4.8rem;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.068);
+  font-weight: 600;
+  background-color: var(--white);
+}
+.nav img {
+  height: 2.5rem;
+}
+
+.hero-block {
+  display: flex;
+  align-items: center;
+  gap: 9.6rem;
+}
+.hero-block-left {
+  flex-basis: 40%;
+}
+.hero-block-right {
+  flex-basis: 60%;
+}
+.hero-block-right img {
+  width: 100%;
+}
+.hero-btn {
+  width: 40%;
+  height: 5rem;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--pink);
+  color: var(--white);
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.137);
+}
+
+.main {
+  padding-top: 9.6rem;
+  padding-bottom: 19.2rem;
+  position: relative;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  padding: 4rem;
+  padding-left: 15rem;
+  padding-right: 0;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.137);
+  border-radius: 10px;
+}
+.block-left {
+  flex-basis: 50%;
+  color: var(--grayblue);
+}
+.block-right {
+  flex-basis: 50%;
+}
+.block-right img {
+  width: 80%;
+}
+
+.ready {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.103);
+  padding: 5rem 10rem;
+  z-index: 999;
+}
+.ready button {
+  width: 60%;
+}
+
+.footer {
+  padding: 9.6rem 0;
+  background-color: var(--darkcyan);
+  z-index: -1;
+  color: var(--white);
+}
