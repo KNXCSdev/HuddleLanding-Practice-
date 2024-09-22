@@ -14,6 +14,11 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </head>
   <body>
     <header class="hero">
@@ -82,16 +87,43 @@
       </div>
     </main>
     <footer class="footer">
-      <div class="grid">
-        <img src="images/logo.svg" alt="" />
-        <ul class="list">
-          <li class="list-item">
-            <img src="images/icon-location.svg" alt="" />Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </li>
-          <li class="list-item"><img src="images/icon-phone.svg" alt="" />+1-543-123-4567</li>
-          <li class="list-item"><img src="images/icon-email.svg" alt="" />example@huddle.com</li>
-        </ul>
+      <div class="container">
+        <div class="grid">
+          <div class="idk"><img src="images/logo.svg" alt="" class="grid-img" /></div>
+
+          <div class="grid-1">
+            <ul class="list">
+              <li class="list-item">
+                <img src="images/icon-location.svg" alt="" />Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+              </li>
+              <li class="list-item"><img src="images/icon-phone.svg" alt="" />+1-543-123-4567</li>
+              <li class="list-item">
+                <img src="images/icon-email.svg" alt="" />example@huddle.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid-2">
+            <ul class="list">
+              <li class="list-item">About Us</li>
+              <li class="list-item">What We Do</li>
+              <li class="list-item">FAQ</li>
+            </ul>
+          </div>
+          <div class="grid-3">
+            <ul class="list">
+              <li class="list-item">Career</li>
+              <li class="list-item">Blog</li>
+              <li class="list-item">Contact Us</li>
+            </ul>
+          </div>
+          <div class="grid-4">
+            <ion-icon name="logo-facebook" class="icon"></ion-icon>
+            <ion-icon name="logo-twitter" class="icon"></ion-icon>
+            <ion-icon name="logo-instagram" class="icon"></ion-icon>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
