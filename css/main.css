@@ -181,6 +181,7 @@ body {
 }
 .list-item {
   display: flex;
+  align-items: center;
   gap: 3rem;
 }
 .list-item img {
@@ -192,4 +193,73 @@ body {
   height: 2.4rem;
   width: 2.4rem;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 60em) {
+  html {
+    font-size: 52.5%;
+  }
+  .hero-block {
+    gap: 4.8rem;
+  }
+  .hero-btn {
+    width: 80%;
+  }
+  .block {
+    padding: 4rem 2rem;
+    justify-content: center;
+  }
+  .grid {
+    column-gap: 8rem;
+  }
+  .ready {
+    padding: 2.5rem 5rem;
+  }
+}
+@media only screen and (max-width: 38em) {
+  html {
+    font-size: 52.5%;
+  }
+  .container {
+    max-width: 60rem;
+  }
+  .nav {
+    padding-bottom: 8rem;
+  }
+  .hero-block {
+    gap: 4.8rem;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .description {
+    width: 100%;
+  }
+  .block {
+    flex-direction: column;
+    text-align: center;
+  }
+  .block-left {
+    order: 2;
+  }
+  .block-right {
+    order: 1;
+  }
+  .ready {
+    width: 90%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .list {
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 28em) {
+  .container {
+    max-width: 40rem;
+  }
+  .ready {
+    padding: 1rem 2.5rem;
+  }
 }
