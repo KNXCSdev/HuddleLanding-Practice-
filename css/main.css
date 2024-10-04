@@ -118,6 +118,7 @@ body {
   padding-right: 0;
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.137);
   border-radius: 10px;
+  transition: all 0.5s;
 }
 .block-left {
   flex-basis: 50%;
@@ -262,4 +263,8 @@ body {
   .ready {
     padding: 1rem 2.5rem;
   }
+}
+.section--hidden {
+  transform: translateX(30rem);
+  opacity: 0;
 }
